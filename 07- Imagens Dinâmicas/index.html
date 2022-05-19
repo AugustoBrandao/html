@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas e Mídias</title>
+</head>
+<body>
+    <h1>IMAGENS DINÂMICAS</h1>
+    <p>Abra essa página em diferentes dispositivos ou aumente e diminua a janela do seu navegador</p>
+
+    <!-- SEMÂNTICO -->
+    <!-- TAG Picture: Informa para o algoritmo que tem uma imagem-->
+    <picture>
+
+        <!--Dimensão menor que 750px de largura (colocar 750 para evitar barra de rolagem)-->
+        <source media="(max-width: 750px)" srcset="Imagens/imagem-pequena.jpeg" type="image/jpeg">
+
+        <!--Dimensão menor que 1000px de largura (colocar 1050 para evitar barra de rolagem)-->
+        <source media="(max-width: 1050px)" srcset="Imagens/imagem-media.jpeg" type="image/jpeg">
+
+        <img src="Imagens/imagem-grande.jpeg" alt="Imagem Flexível">
+    </picture>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Listas</title>
+</head>
+<body>
+    <h1>Listas Ordenadas, Não Ordenadas e Listas de Definição</h1>
+    <hr><br>
+
+    <h3><mark>Listas Ordenadas (Ordered List)</mark></h3>
+    <p>São listas em que <u>a ordem faz diferença.</u></p>
+    <!-- Type="1" significa tipo numérico-->
+    <!-- Type="A" significa tipo alfabético-->
+    <!-- Type="I" significa números romanos-->
+    <ol type="1" start="0">
+        <li>Acordar</li>
+        <li>Orar</li>
+        <li>Escovar os dentes</li>
+        <li>Ir à padaria</li>
+        <li>Tomar café</li>
+        <li>Estudar 5 aulas de SQL</li>
+        <li>Treinar</li>
+        <li>Fazer almoço</li>
+        <li>Almoçar</li>
+        <li>Cochilo de 30 minutos</li>
+        <li>Estudar HTML - 5 aulas</li>
+        <li>Cochilo de 20 minutos</li>
+        <li>Estudar SQL - 5 aulas</li>
+    </ol><br>
+
+    <h3><mark>Listas Não Ordenadas (Unordered List)</mark></h3>
+    <p>Listas que <u>não dependem de uma ordem:</u></p>
+    
+    <ul type="square"> <!-- Type pode ser circle, disc ou square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Ovos</li>
+    </ul><br>
+    
+    <h3><mark>Listas Mistas:</mark></h3>
+    <ol type="1">
+        <li><u><strong>Tipo 01</strong></u></li>
+            <ul type="disc">
+                <li>Item 01</li>
+                <ul type="circle">
+                    <li>Subitem 01</li>
+                    <li>Subitem 02</li>
+                </ul>
+                <li>Item 02</li>
+                <li>Item 03</li>
+            </ul>
+        <li><u><strong>Tipo 02</strong></u></li>
+            <ol type="a" start="9"> <!-- O start é numérico -->
+                <li>Item 01</li>
+                <li>Item 02</li>
+                <li>Item 03</li>
+            </ol>
+    </ol><br>
+    <h3><mark style="background-color: aqua;">Mudar Várias Tags de Uma Vez Só</mark></h3>
+    <ul>
+        <li>Selecione a primeira tag</li>
+        <li><strong>Aperte Alt</strong></li>
+        <li>Selecione outras tags</li>
+        <li>Modifique</li>
+    </ul><br>
+    <h3>Lista de Definição</h3>
+    <p>Essa lista permite que você coloque um <mark><u>Termo</u></mark> e uma <mark><u>Descrição</u></mark></p>
+    <dl>
+        <dt>Termo 01</dt>
+        <dd>Essa é apenas uma definição do termo 01</dd>
+        <dt>Termo 02</dt>
+        <dd>Essa é apenas uma definição do termo 02</dd>
+    </dl>
+</body>
+</html>

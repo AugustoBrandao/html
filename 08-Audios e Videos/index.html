@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>REPRODUZINDO AUDIO</h1>
+     <p>Reproduzindo audio no próprio HTML5</p>
+     <!-- MP3 WAV OGG-->
+     <audio src="Media/Clang - Yung Logos.mp3" controls autoplay></audio> <!--forma 1-->
+
+     <audio preload="auto" autoplay controls>
+         <!--MEDIA TYPES-->
+         <!-- mp3: audio/mpeg-->
+         <!-- ogg: audio/ogg-->
+         <!-- wav: audio/wav (muito pesado)-->
+        <source src="Media/Damn - Yung Logos.mp3" type="audio/mpeg">
+     </audio>
+     <hr>
+     <h1>REPRODUZINDO VÍDEOS</h1>
+     <!-- LINK PEXELS: https://www.pexels.com/-->
+     <!-- Tipos de Formatos de Vídeos: MP4*, MKV*, WebM -->
+     <!-- HandBrake - Software Livre para mudar formato do arquivo de vídeo-->
+     <!--Link: https://handbrake.fr/-->
+     <video src="Media/Videos/production ID_4881727.mp4" width='250px' controls></video> <!--Forma Simples-->
+
+     <!--Forma recomendável-->
+     <video controls width="250px">
+        <source src="Media/Videos/production ID_4881727.mp4" type="video/mp4">
+     </video>
+     <hr>
+     <h1>Inserindo vídeos de um Servidor Externo</h1>
+     <iframe width="500" height="300" src="https://www.youtube.com/embed/DIraePpIAog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+</html>

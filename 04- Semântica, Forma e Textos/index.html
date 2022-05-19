@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica e Texto</title>
+</head>
+
+<body>
+    <h1>O Que é Semântica?</h1>
+    <p>Semântica tem haver com tags que focam no significado, e não em sua forma;
+        pelo que ele representa, e não pelo que ele é.
+        Por exemplo, a tag adress fica na mesma forma que a tag itálico, porém se o site for aberto
+        por um smartphone, ele poderá se tornar um link que direciona para o Google Maps&copy;
+    </p>
+    <h3>Endereço de Casa</h3>
+    <address>Av. Marechal João B. M. de Moraes, 1002- Jd. Roberto, Osasco - SP</address>
+    <br>
+    <b>Tag b -> Não-Semântica: </b>
+    <p>Só tem forma, não tem significado</p>
+    <br>
+    <strong>Palavra em Destaque</strong>
+    <p>Possui um valor semântico de destaque, mas a forma semelhante
+        à tag b (bold).
+    </p>
+    <br>
+    <p>
+        Nesta frase, temos um <i>trecho em itálico</i> sem nenhum tag com valor semântico. <br>
+        Nesta frase, temos um <em>trecho em ênfase</em> com uma tag semântica. <br>
+        <strong>Forma: </strong>CSS <br>
+        <strong>Semântica: </strong>HTML
+        <br>
+    </p>
+    <p>Nesta frase, vamos fazer um texto marcado coma a tag Mark: <mark>Texto de exemplo</mark></p>
+    <p>Texto com uma marcação de cor diferente: <mark style="background-color:rgb(112, 253, 253)">Texto marcado em
+            azul</mark></p>
+    <p>X<sup>2</sup>+AX+B</p>
+    <p>H<sub>2</sub>O</p>
+    <u>Texto Sublinhado</u>
+    <hr>
+    <br>
+    <h1>OUTRAS FORMATAÇÕES IMPORTANTES</h1>
+    <br>
+    <h3>Código Fonte</h3>
+    <p>O comando <mark><code>Document.getElementById('teste')</code></mark> é um comando da linguagem de programação JavaScript</p>
+    <p>Vou mostrar agora um exemplo de como deixar o código identado dentro de um documento HTML:</p>
+    <pre>
+        <code>
+    n == 2;
+
+    if(n % 2 == 0)
+    {
+        printf('O número é par');
+    }else{
+        printf('O número é ímpar')
+    }
+        </code>
+    </pre>
+
+    <h3>Citações Importantes</h3>
+    <p><q>Essa frase aqui é uma citação.</q> - Sim, é muito mais fácil colocar as aspas antes, porém focamos na semântica, e não na forma.</p>
+
+    <p>Segundo uma frase muito iconica marcado em blockquote para o algoritmo do Google entender: </p>
+    <p>
+        <blockquote cite="https://pt.wikipedia.org/wiki/Lorem_ipsum" style="background-color: aquamarine;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam soluta consectetur deleniti dicta facilis, molestias asperiores. Odio labore atque expedita ipsa, explicabo facilis molestias deserunt quas excepturi totam eaque in.
+        </blockquote>
+    </p>
+    <p>Vou mostrar para o algoritmo de busca que estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> da forma mais semântica possível.</p>
+</body>
+
+</html>
