@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULÁRIO</h1>
+    <!--Action: onde os dados serão enviados-->
+    <!--Method: GET ou POST - Métodos HTTP-->
+    <form action="" method="get" enctype="multipart/form-data"> <!--multipart/form-data: Indica que o formulário possui textos e arquivos-->
+
+        <!--Label: Texto de orientação para utilizar um input - For recebe o ID do input que você quer vincular -->
+        <label for="input-text">Digite o seu nome: </label>
+        <input type="text" name="texto" placeholder="Digite alguma coisa..." required id="input-text"></br>
+        </br>
+
+        <!--Textarea -> Textos grandes-->
+        <textarea name="" id="" cols="30" rows="5">Texto já escrito</textarea></br>
+
+        <!--Checkbox-->
+        <label for="">Você é macho?</label>
+        <input type="checkbox" value="sim" name="macho?" checked>Sim
+        <input type="checkbox" value="não" name="macho?">Não
+        </br>
+        </br>
+
+        <!--Radio Button-->
+        <label for="hub1"><input type="radio" name="hub1" id="hub1" name="hub" value="sp">São Paulo</label>
+        <label for="hub2"><input type="radio" name="hub1" id="hub2" name="hub" value="rj">Rio de Janeiro</label>
+        <label for="hub3"><input type="radio" name="hub1" id="hub3" name="hub" value="bh">Belo Horizonte</label>
+        </br>
+        </br>
+
+        <!--Dropdown list-->
+        <select name="estado" id="dropdown-estado">
+            <option value="sp">São Paulo</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="rj">Rio de Janeiro</option>
+        </select>
+        </br>
+        </br>
+
+        <!--Campo de senha-->
+        <input type="password" name="senha" id="">
+        </br>
+        </br>
+
+        <!--Enviar arquivo-->
+        <input type="file" name="" id="">
+        </br>
+        </br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
